@@ -1,0 +1,20 @@
+author: Ar7ific1al
+description: A resource gathering plugin
+main: com.github.ar7ific1al.resourceful.Resourceful
+name: Resourceful
+url: 
+version: 0.1B
+commands:
+    res:
+      description: Base command for Resourceful.
+      usage: /<command> help
+permissions:
+    resourceful.*:
+      description: Gives access to all Resourceful commands.
+      children:
+          resourceful.help: true
+          resourceful.admin: true
+    resourceful.help:
+      description: Gives access to Resourceful help.
+    resourceful.admin:
+      description: Gives access to Resourceful admin controls.
